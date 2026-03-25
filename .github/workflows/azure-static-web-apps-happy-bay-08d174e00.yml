@@ -32,6 +32,15 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "dist" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+        env:
+          VITE_FIREBASE_APIKEY: "AIzaSyCNhsnhCsFgs7IQ00y4ZjJbcwtxOxJ4gaY"
+          VITE_FIREBASE_AUTH_DOMAIN: "aiexamnotes.firebaseapp.com"
+          VITE_FIREBASE_PROJECT_ID: "aiexamnotes"
+          VITE_FIREBASE_STORAGE_BUCKET: "aiexamnotes.firebasestorage.app"
+          VITE_FIREBASE_MESSAGING_SENDER_ID: "198091553006"
+          VITE_FIREBASE_APP_ID: "1:198091553006:web:cd719d4ee1ebf391139bff"
+          VITE_STRIPE_Publishable_Key: "pk_test_51TETyeALRVTUbwk9qlG4XPKDit8P5saE5BIQgXQKazTHv9raEnJge9CRd3nrYptAotDEh410uKsWQsk61wEResAW00xCpqCFKL"
+          VITE_BACKEND_URL: "https://ainotes-gnaxbqehd3cegzb0.centralindia-01.azurewebsites.net"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
